@@ -1,0 +1,250 @@
+/* Definição de variáveis globais de cores */
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do corpo */
+body {
+    background-color: var(--cor-primaria);
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background-color: #333;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu_navegacao {
+    display: flex;
+    gap: 20px;
+}
+
+.menu_navegacao a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    padding: 12px 20px;
+    transition: color 0.3s ease;
+}
+
+.menu_navegacao a:hover {
+    color: #fca400;
+}
+
+.menu_navegacao a:focus {
+    outline: 2px solid #fca400;
+    outline-offset: 4px;
+}
+
+/* Estilização principal */
+.main-content {
+    flex: 1;
+    padding: 5% 10%;
+    padding-top: 130px; /* Ajuste para alinhar com o cabeçalho */
+}
+
+/* Estilização da seção de apresentação */
+.texto1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.texto2 {
+    width: 615px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.pz_titulo {
+    font-size: 34px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-secundaria);
+}
+
+.destaque_t {
+    color: #ffe600;
+}
+
+.pz_texto {
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-secundaria);
+}
+
+/* Estilização dos links */
+.apresentacao_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.apresentacao_links_subtitulo {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--cor-secundaria);
+}
+
+.apresentacao__links__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--cor-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    width: 378px;
+}
+
+.apresentacao__links__link img {
+    width: 24px;
+    height: 24px;
+}
+
+.apresentacao__links__link:hover {
+    background-color: #272727;
+    color: var(--cor-secundaria);
+}
+
+/* Estilização da página "Sobre mim" */
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sobre-mim-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sobre-mim img {
+    border-radius: 8px;
+}
+
+.sobre-mim-texto {
+    max-width: 600px;
+    color: var(--cor-secundaria);
+}
+
+/* Estilização da página "Currículo" */
+.perfil {
+    text-align: center;
+}
+
+.perfil-imagem {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.experiencias, .educacao, .projetos {
+    margin-top: 30px;
+}
+
+.experiencias h2, .educacao h2, .projetos h2 {
+    color: var(--cor-secundaria);
+}
+
+.experiencias ul, .educacao ul, .projetos ul {
+    list-style-type: none;
+    color: var(--cor-secundaria);
+}
+
+
+/* Estilos para a página "Sobre mim" */
+.apresentacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #F6F6F6;
+}
+
+.apresentacao__conteudo {
+    max-width: 800px;
+    text-align: center;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+    color: #F6F6F6;
+    margin-bottom: 20px;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #2ec500;
+    line-height: 1.6;
+}
+
+.apresentacao__conteudo__texto img {
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Estilização do rodapé */
+.footer {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 24px;
+}
+
+
+
+
+
+
+
+
